@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>My Website</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="/assets/revou.png" alt="Logo" class="logo">
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-2xl">
+            ☰
+        </button>
+
+        <nav id="menu" class="navbar hidden md:flex flex-col md:flex-row bg-white w-full md:w-auto">
+            <!-- <div class="menu-container">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#porto">Portofolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </div> -->
+
+            <div class="home">
+                <a href="#home">Home</a>
+            </div>
+            <div class="profile">
+                <a href="#profile">Our Profile</a>
+            </div>
+            <div class="portofolio">
+                <a href="#porto">Portofolio</a>
+            </div>
+            <div class="message">
+                <a href="#msg">Message Us</a>
+            </div>
+
+        </nav>
+    </header>
+    <hr>
+    <hr>
+    <script src="/js/script.js"></script>
 </body>
 </html>
