@@ -33,9 +33,6 @@
             <div class="profile">
                 <a href="#profile">Our Profile</a>
             </div>
-            <div class="portofolio">
-                <a href="#porto">Portofolio</a>
-            </div>
             <div class="message">
                 <a href="#msg">Message Us</a>
             </div>
@@ -45,41 +42,92 @@
     <hr>
     <hr>
 
-    <section id="welcome" class="p-8 mt-6 ml-12">
-        <h1 id="welcome-text" class="text-2xl"></h1>
-        <p>Ini adalah website latihan pertama</p>
+    <main>
+        <section id="welcome" class="p-8 mt-6 ml-12">
+            <h1 id="welcome-text" class="text-2xl"></h1>
+            <p>Ini adalah website latihan pertama</p>
 
-        <img src="assets/white-style-A854hmQq23o-unsplash.png" alt="Welcome banner" class="w-[1366px] h-[578] opacity-50 mx-auto rounded-lg mt-4">
-    </section>
-    <hr>
-    <hr>
+            <img src="assets/white-style-A854hmQq23o-unsplash.png" alt="Welcome banner" class="w-[1366px] h-[578] opacity-50 mx-auto rounded-lg mt-4">
+        </section>
+        <hr>
+        <hr>
 
-    <section id="profile" class="p-8 mt-6 ml-12 mb-8">
-        <h1 class="text-2xl font-bold">
-            Our Headquarter
-        </h1>
+        <section id="profile" class="p-8 mt-6 ml-12 mb-8">
+            <h1 class="text-2xl font-bold">
+                Our Headquarter
+            </h1>
 
-        <div class="flex space-x-16 mt-5">
+            <div class="flex space-x-16 mt-5">
+                <div class="flex flex-col items-center">
+                    <img src="assets/headquarterJkt.jpg" alt="jakarta" class="w-40 h-40 rounded-full object-cover ml-12">
+                    <p class="mt-2 text-center font-semibold ml-12">Jakarta</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="assets/headquarterBdg.jpg" alt="bandung" class="w-40 h-40 rounded-full object-cover ml-12">
+                    <p class="mt-2 text-center font-semibold ml-12">Bandung</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="assets/headquarterSby.jpeg" alt="surabaya" class="w-40 h-40 rounded-full object-cover ml-12">
+                    <p class="mt-2 text-center font-semibold ml-12">Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <hr>
+
+        <section id="msg" class="mt-10 flex justify-center gap-20 p-4">
+        <!-- Kiri: Form & H1 -->
             <div class="flex flex-col items-center">
-                <img src="assets/headquarterJkt.jpg" alt="jakarta" class="w-40 h-40 rounded-full object-cover ml-12">
-                <p class="mt-2 text-center font-semibold ml-12">Jakarta</p>
+                <h1 class="text-2xl font-bold mb-4">Message Us</h1>
+
+                <form id="messageForm" class="space-y-4 bg-white p-4 rounded shadow w-[500px]">
+                    <div class="flex items-start">
+                        <label for="name" class="w-32 font-semibold">Nama :</label>
+                        <input type="text" id="name" name="name" class="flex-1 border border-gray-300 rounded p-1" placeholder="Nama" required>
+                    </div>
+
+                    <div class="flex items-center">
+                        <label for="dob" class="w-32 font-semibold">Tanggal Lahir :</label>
+                        <input type="date" id="dob" name="dob" class="flex-1 border border-gray-300 rounded p-1" required>
+                    </div>
+
+                    <div class="flex items-center">
+                        <span class="w-32 font-semibold">Jenis Kelamin :</span>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-1">
+                            <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+                            </label>
+                            <label class="flex items-center gap-1">
+                            <input type="radio" name="gender" value="Perempuan"> Perempuan
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <label for="message" class="w-32 font-semibold">Pesan :</label>
+                        <textarea id="message" name="message" class="flex-1 border border-gray-300 rounded p-1" rows="3" placeholder="Pesan" required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gray-400 text-white py-1 rounded hover:bg-gray-500">Submit</button>
+                </form>
             </div>
 
-            <div class="flex flex-col items-center">
-                <img src="assets/headquarterBdg.jpg" alt="bandung" class="w-40 h-40 rounded-full object-cover ml-12">
-                <p class="mt-2 text-center font-semibold ml-12">Bandung</p>
+            <!-- Kanan: Output -->
+            <div id="output" class="border border-black p-4 rounded bg-white w-[500px] h-fit min-h-[370px] mb-4">
+                <p class="italic text-gray-500">Data akan tampil di sini...</p>
             </div>
-
-            <div class="flex flex-col items-center">
-                <img src="assets/headquarterSby.jpeg" alt="surabaya" class="w-40 h-40 rounded-full object-cover ml-12">
-                <p class="mt-2 text-center font-semibold ml-12">Surabaya</p>
-            </div>
+        </section>
+    
+    </main>
+    
+    <footer>
+        <div class="text-center p-4 bg-gray-200">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
         </div>
-    </section>
-
-    <hr>
-    <hr>
-
+    </footer>
     <script src="/js/script.js"></script>
 </body>
 </html>
