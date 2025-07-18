@@ -11,7 +11,7 @@ if(!userName){
     userName = "Guest";
 }
 
-document.getElementById("welcome-text").innerText = `Hi ${userName}, Welcome to my website`;
+document.getElementById("welcome-text").innerText = `Hi ${userName}, Welcome to RevoU Website`;
 
 document.addEventListener('DOMContentLoaded', () =>{
     const form = document.getElementById('messageForm');
